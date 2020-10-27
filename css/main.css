@@ -20,10 +20,35 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    padding: .4rem .5rem;
+    background-color: #ffa62b;
+    color: #132743;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: #132743;    
+    color: #ffa62b;
+}
+
 .container {
-    width: 90vw;
+    width: 94vw;
     max-width: 1100px;
     margin: auto;
+}
+
+.header > h1 {
+    color: #132743;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header h1>i {
+    margin-left: .3rem;
 }
 
 /* Navbar */
@@ -32,10 +57,7 @@ nav {
     background: #132743;
     position: sticky;
     top: 0;
-    z-index: 100%;
-    box-shadow: 0px 4px 5px -1px rgba(19,39,67,0.75);
-    -webkit-box-shadow: 0px 4px 5px -1px rgba(19,39,67,0.75);
-    -moz-box-shadow: 0px 4px 5px -1px rgba(19,39,67,0.75);
+    z-index: 100;
 }
 
 .nav-items {
@@ -72,12 +94,13 @@ nav {
 
 /* Header */
 header {
+    background-color: #e8e8e8;
     
 }
 
-.slider img {
+.slider-image img {
     height: 86vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .slider-image {
@@ -103,3 +126,39 @@ header {
     font-size: 2rem;
 }
 /* End Header */
+
+/* Services */
+.services {
+    background-color: #e8e8e8;
+    padding: 3rem 0;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.services-container .card {
+    background-color: #ffffff;
+}
+
+.card > img {
+    width: 100%;
+}
+
+
+
+.services-container .card-body {
+    padding: .5rem;
+}
+
+.card-body .title {
+    color: #132743;
+}
+
+.services-container .card-footer {
+    padding: .5rem 0 .8rem .5rem;
+
+}
