@@ -8,6 +8,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 ul {
     list-style: none;
 }
@@ -65,3 +69,37 @@ nav {
     color: #ffffff;
 }
 /* End Navbar */
+
+/* Header */
+header {
+    
+}
+
+.slider img {
+    height: 86vh;
+    width: 100vw;
+}
+
+.slider-image {
+    position: relative;
+    text-align: center;        
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text > h1 {
+    color: #821752;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.text > h3 {
+    color: #ffa62b;
+    font-size: 2rem;
+}
+/* End Header */
