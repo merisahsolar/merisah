@@ -44,6 +44,15 @@ a {
     margin-left: .2rem;
 }
 
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.wrap {
+    padding-bottom: 28vh;
+}
+
 .container {
     width: 94vw;
     max-width: 1100px;
@@ -171,6 +180,8 @@ nav {
 footer {
     background: #132743;
     height: 28vh;
+    position: absolute;
+    width: 100%;
     bottom: 0;
 }
 
@@ -261,9 +272,6 @@ footer {
 
 .page-body .contact {
     display: flex;
-}
-
-.map {
 }
 
 .form {
