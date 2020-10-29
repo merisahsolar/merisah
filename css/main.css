@@ -27,6 +27,8 @@ a {
     color: #132743;
     font-weight: bold;
     transition: all .5s;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -102,10 +104,6 @@ nav {
 /* End Navbar */
 
 /* Header */
-header {
-    
-}
-
 .slider-image img {
     height: 86vh;
     width: 100%;
@@ -238,3 +236,66 @@ footer {
     color: #e8e8e8;
 }
 /* End Copyright */
+
+/* Contact Page */
+.page-header {
+    background: url('../images/head.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header > h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffa62b;
+}
+
+.page-body {
+    margin: 2rem 0;
+}
+
+.page-body .contact {
+    display: flex;
+}
+
+.map {
+}
+
+.form {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form > label {
+    margin-bottom: .3rem;
+}
+
+label > span {
+    color: red;
+}
+
+form > input, form > textarea {
+    border: none;
+    padding: .5rem;
+    border-radius: .3rem;
+    border-width: 0;
+    outline-width: 0;
+    margin-bottom: 1rem;
+}
+
+form > button {
+    border-radius: .3rem;
+}
+
+/* End Contact Page */
