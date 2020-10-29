@@ -10,6 +10,7 @@ html {
 
 body {
     overflow-x: hidden;
+    background-color: #e8e8e8;
 }
 
 ul {
@@ -31,6 +32,14 @@ a {
 .btn:hover {
     background-color: #132743;    
     color: #ffa62b;
+}
+
+.btn > i {
+    transition: .5s ease;
+}
+
+.btn:hover i {
+    margin-left: .2rem;
 }
 
 .container {
@@ -94,7 +103,6 @@ nav {
 
 /* Header */
 header {
-    background-color: #e8e8e8;
     
 }
 
@@ -129,7 +137,6 @@ header {
 
 /* Services */
 .services {
-    background-color: #e8e8e8;
     padding: 3rem 0;
 }
 
@@ -148,8 +155,6 @@ header {
     width: 100%;
 }
 
-
-
 .services-container .card-body {
     padding: .5rem;
 }
@@ -162,3 +167,74 @@ header {
     padding: .5rem 0 .8rem .5rem;
 
 }
+/* End services section */
+
+/* Footer */
+footer {
+    background: #132743;
+    height: 28vh;
+    bottom: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.footer h4 {
+    color: #e8e8e8;
+    margin-bottom: 1rem;
+}
+
+.footer i, .footer a {
+    color: #ffa62b;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.social i {
+    font-size: 1.5rem;
+    color: #ffa62b;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact i, .location i {
+    margin-right: .2rem;
+}
+
+.contact i:first-child {
+    margin-bottom: .5rem;
+}
+
+.location i:first-child{
+    margin-bottom: .5rem;
+}
+
+.location-icons {
+    display: flex;
+    flex-direction: column;
+}
+/* End Footer */
+
+/* Copyright */
+.copy {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    color: #e8e8e8;
+}
+/* End Copyright */
