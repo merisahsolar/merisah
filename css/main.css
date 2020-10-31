@@ -6,6 +6,7 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -50,25 +51,13 @@ a {
 }
 
 .wrap {
-    padding-bottom: 28vh;
+    padding-bottom: 25vh;
 }
 
 .container {
     width: 94vw;
     max-width: 1100px;
     margin: auto;
-}
-
-.header > h1 {
-    color: #132743;
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-.header h1>i {
-    margin-left: .3rem;
 }
 
 /* Navbar */
@@ -148,38 +137,49 @@ nav {
 }
 
 .services-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+    display: flex;
+    flex-direction: column;
     margin-top: 2rem;
 }
 
-.services-container .card {
-    background-color: #ffffff;
+.service:not(:first-child){
+    margin-top: 5rem;
 }
 
-.card > img {
+.service-content > .title {
+    font-size: 2.5rem;
+}
+
+.service:nth-child(odd) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: right;
+    grid-gap: 2rem;
+}
+
+.service:nth-child(even) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: left;
+}
+
+.service-img > img {
     width: 100%;
+    /* height: 400px; */
 }
 
-.services-container .card-body {
-    padding: .5rem;
-}
-
-.card-body .title {
-    color: #132743;
-}
-
-.services-container .card-footer {
-    padding: .5rem 0 .8rem .5rem;
-
+.service-content > .description {
+    margin: 1rem 0;
+    
 }
 /* End services section */
 
 /* Footer */
 footer {
     background: #132743;
-    height: 28vh;
+    height: 25vh;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -243,7 +243,7 @@ footer {
 .copy {
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     color: #e8e8e8;
 }
 /* End Copyright */
