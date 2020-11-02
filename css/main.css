@@ -23,7 +23,7 @@ a {
 }
 
 .btn {
-    padding: .4rem .5rem;
+    padding: .5rem;
     background-color: #ffa62b;
     color: #132743;
     font-weight: bold;
@@ -166,6 +166,11 @@ nav {
     text-align: left;
 }
 
+.service-img {
+    margin: 1rem 0;
+
+}
+
 .service-img > img {
     width: 100%;
     /* height: 400px; */
@@ -174,6 +179,13 @@ nav {
 .service-content > .description {
     margin: 1rem 0;
     line-height: 1.6;    
+}
+
+@media(max-width: 700px){
+    .service:nth-child(odd), .service:nth-child(even) {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
 }
 /* End services section */
 
@@ -307,6 +319,36 @@ form > button {
     border-radius: .3rem;
 }
 
+.gmap_canvas iframe {
+    width: 500px;
+    height: 450px;
+}
+
+@media(max-width: 950px){
+    .page-body .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .gmap_canvas {
+        display: flex;
+        justify-content: center;
+    }
+
+    .map {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+        /* margin: auto; */
+    }
+
+
+}
+
+
 /* End Contact Page */
 
 
@@ -392,4 +434,15 @@ form > button {
 
 .choice-img > img {
     width: 100%;
+}
+
+@media(max-width: 800px){
+    .about, .activities, .choice {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .mission .content {
+        max-width: 80vw;
+    }
 }
