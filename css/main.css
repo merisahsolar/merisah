@@ -75,7 +75,8 @@ nav {
 }
 
 .logo {
-    height: 50px;
+    height: 60px;
+    width: 130px;
 }
 
 .nav-items > ul {
@@ -120,7 +121,7 @@ nav {
 }
 
 .text > h1 {
-    color: #821752;
+    color: #aa3a3a;
     font-size: 4rem;
     font-weight: bold;
 }
@@ -172,7 +173,7 @@ nav {
 
 .service-content > .description {
     margin: 1rem 0;
-    
+    line-height: 1.6;    
 }
 /* End services section */
 
@@ -324,4 +325,71 @@ form > button {
 
 .page-content .description {
     line-height: 1.4;
+}
+
+/* About Page */
+.content > p {
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3rem 0 5rem 0;
+}
+
+.mission .content {
+    max-width: 50vw;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    align-items: center;
+    color: #132743;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 5rem 0;
+}
+
+.about-img > img {
+    width: 100%;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin: 5rem 0;
+}
+
+.activities-img > img {
+    width: 100%;
+}
+
+.choice {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 3rem 0;
+}
+
+.choice-img > img {
+    width: 100%;
 }
