@@ -69,6 +69,10 @@ nav {
     z-index: 100;
 }
 
+#btn {
+    display: none;
+}
+
 .nav-items {
     display: flex;
     justify-content: space-between;
@@ -79,30 +83,49 @@ nav {
     width: 130px;
 }
 
-.nav-items > ul {
+.menu > ul {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 20px 0;
 }
 
-.nav-items ul > li:not(:last-child) {
+.menu ul > li:not(:last-child) {
     margin-right: 4rem;
 }
 
-.nav-items a {
+.menu a {
     color: #ffa62b;
     font-weight: bold;
     transition: .3s ease;
     padding: .2rem 0;
+    font-size: 1rem;
 }
 
-.nav-items a:hover {
+.nav-items i {
+    color: #ffa62b;
+    font-weight: bold;
+    transition: .3s ease;
+    padding: .2rem 0;
+    cursor: pointer;
+}
+
+.menu a:hover {
     border-bottom: 2px solid #ffffff;
     color: #ffffff;
 }
 /* End Navbar */
 
 /* Header */
+header {
+    /* background: url('../images/h1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover; */
+    height: 86vh;
+    /* background-color: lightgray; */
+    position: relative;
+    text-align: center;
+
+}
 .slider-image img {
     height: 86vh;
     width: 100%;
@@ -186,6 +209,15 @@ nav {
         grid-template-columns: 1fr;
         text-align: left;
     }
+
+    .service:nth-child(even) .service-content {
+        order: 2;
+    }
+
+    .service:nth-child(even) .service-img {
+        order: -1;
+    }
+
 }
 /* End services section */
 
@@ -472,4 +504,88 @@ form > button {
     .social-icons {
         display: flex;
     }
+}
+
+
+/* Sidebar */
+@media(max-width: 600px){
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 87vh;
+    background: #132743;
+    transition: all .5s ease;
+    margin-top: 3rem;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: #ffa62b;
+    padding-left: 40px;
+    transition: .4s;
+    font-weight: bold;
+}
+
+.sidebar ul li:hover a {
+    padding-left: 50px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #ffa62b;
+    border-radius: 3px;
+}
+
+label #btn {
+    left: 40px;
+    top: 7px;
+    font-size: 35px;
+    color: #000000;
+    padding: 6px 12px;
+    transition: all .5s;
+    display: block;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;   
+}
+
+.nav-items ul > li {
+    margin-right: 0;
+}
+
+.nav-items a:hover {
+    border-bottom: none;
+    color: #ffffff;
+}
 }
