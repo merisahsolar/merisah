@@ -69,9 +69,18 @@ nav {
     z-index: 100;
 }
 
-#btn {
+#check {
     display: none;
 }
+
+label #btn {
+    display: none;
+}
+
+label #cancel {
+    display: none;
+}
+
 
 .nav-items {
     display: flex;
@@ -547,7 +556,7 @@ label #btn, label #cancel {
 }
 
 label #btn {
-    left: 40px;
+    left: 195px;
     top: 7px;
     font-size: 35px;
     color: #000000;
@@ -587,5 +596,9 @@ label #cancel {
 .nav-items a:hover {
     border-bottom: none;
     color: #ffffff;
+}
+
+label #cancel {
+    display: inline-block;
 }
 }
